@@ -10,7 +10,7 @@ const Template = args => <Buttons {...args} />;
 
 export const Default = Template.bind({});
 Default.args = {
-  task: {
+  button: {
     id: '1',
     title: 'Test Buttons',
     state: 'Buttons',

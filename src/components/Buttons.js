@@ -1,4 +1,3 @@
-import * as React from "react";
 import styled from "styled-components";
 
 const theme = {
@@ -34,6 +33,10 @@ const Button = styled.button`
 `;
 
 Button.defaultProps = {
-  theme: "light"
+  theme: "light",
 };
-export default Button;
+export default function Buttons() {
+  return (
+    <Button>Primary</Button>
+  )
+};
