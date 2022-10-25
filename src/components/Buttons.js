@@ -1,18 +1,21 @@
 import styled from "styled-components";
+import theme from "../tokens/colors.json";
 
-const theme = {
-  light: {
-    default: "#010203",
-    hover: "#283593"
-  },
-  dark: {
-    default: "#ffffff",
-    hover: "#ad1457"
-  }
-};
+// const theme = {
+//   light: {
+//     default: "#010203",
+//     hover: "#283593"
+//   },
+//   dark: {
+//     default: "#ffffff",
+//     hover: "#ad1457"
+//   }
+// };
+// background-color: ${(props) => theme.color[props.theme].primary.white.value};
+
 
 const Button = styled.button`
-  background-color: ${(props) => theme[props.theme].default};
+  background-color: ${theme.color.dark.primary.black.value};
   height: 46px;
     padding: 11px 18px 11px 22px;
     border-radius: 23px;
@@ -24,7 +27,7 @@ const Button = styled.button`
   margin: 10px 0px;
   cursor: pointer;
   &:hover {
-    background-color: ${(props) => theme[props.theme].hover};
+    background-color: ${theme.color.dark.primary.blue.value};
   }
   &:disabled {
     cursor: default;
@@ -33,7 +36,7 @@ const Button = styled.button`
 `;
 
 Button.defaultProps = {
-  theme: "light",
+  theme: "dark",
 };
 export default function Buttons() {
   return (
