@@ -19,10 +19,6 @@
     yarn
     ```
 
-1.  **Open the source code and start editing!**
-
-    Open the `taskbox` directory in your code editor of choice and building your first component!
-
 1.  **Browse your stories!**
 
     Run `yarn storybook` to see your component's stories at `http://localhost:6006`
