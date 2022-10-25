@@ -37,6 +37,6 @@ Button.defaultProps = {
 };
 export default function Buttons() {
   return (
-    <Button>Primary</Button>
+    <Button>Secondary</Button>
   )
 };
